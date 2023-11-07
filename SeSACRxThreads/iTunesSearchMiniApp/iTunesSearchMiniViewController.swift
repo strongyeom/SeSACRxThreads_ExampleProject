@@ -22,11 +22,11 @@ class ITunesSearchMiniViewController : UIViewController {
         return table
     }()
     
+    let viewModel = ITunesViewModel()
      
     let searchController = UISearchController()
     
-    var items: BehaviorSubject<[AppInfo]> = BehaviorSubject(value: [])
-    var searchText: String = "카카오톡"
+
     let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -38,8 +38,12 @@ class ITunesSearchMiniViewController : UIViewController {
     
     func bind() {
         
+        
+        let input = ITunesViewModel.Input(zip: Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(AppInfo.self)))
+        
+        let output = viewModel.transform(input: input)
         ///TableView에 데이터 뿌려주기
-        items
+        viewModel.items
             .bind(to: tableView.rx.items(cellIdentifier: ITunesTableViewCell.identifier, cellType: ITunesTableViewCell.self)) { row, element, cell in
                 
                 cell.setUI(data: element)
@@ -55,8 +59,7 @@ class ITunesSearchMiniViewController : UIViewController {
             .disposed(by: disposeBag)
         
         /// TableView 클릭후 화면 전환
-        Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(AppInfo.self))
-            .map { $0.1 }
+        output.zip
             .debug()
             .subscribe(with: self) { owner, result in
                 let detailVC = DetailAppInfoViewController()
@@ -70,12 +73,12 @@ class ITunesSearchMiniViewController : UIViewController {
         
         /// 네트워크 통신 - 초기값 세팅
         let request = SearchAPIManager
-            .requestSearch(searchString: searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
+            .requestSearch(searchString: viewModel.searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
             .asDriver(onErrorJustReturn: SearchAppModel(resultCount: 0, results: []))
         
         request
             .drive(with: self) { owner, response in
-                owner.items.onNext(response.results)
+                owner.viewModel.items.onNext(response.results)
             }
             .disposed(by: disposeBag)
             
@@ -86,13 +89,13 @@ class ITunesSearchMiniViewController : UIViewController {
             .withLatestFrom(searchController.searchBar.rx.text.orEmpty)
             .throttle(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
             .debug()
-            .distinctUntilChanged()
+            //.distinctUntilChanged()
             .flatMap {
                 SearchAPIManager.requestSearch(searchString: $0.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
             }
             .map { $0.results }
             .bind(with: self, onNext: { owner, value in
-                owner.items.onNext(value)
+                owner.viewModel.items.onNext(value)
             })
 
             .disposed(by: disposeBag)
