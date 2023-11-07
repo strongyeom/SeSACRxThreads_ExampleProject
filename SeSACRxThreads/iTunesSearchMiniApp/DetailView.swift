@@ -141,16 +141,16 @@ class DetailView : UIView {
             make.leading.equalTo(newRelease)
             make.top.equalTo(newRelease.snp.bottom).offset(10)
         }
-        
-        realseNote.snp.makeConstraints { make in
+        descriptionLabel.backgroundColor = .yellow
+        descriptionLabel.snp.makeConstraints { make in
             make.top.equalTo(newReleaseVersion.snp.bottom).offset(15)
             make.leading.equalTo(iconImage)
             make.trailing.equalTo(appname)
         }
         
-        descriptionLabel.snp.makeConstraints { make in
-            make.top.equalTo(realseNote.snp.bottom).offset(10)
-            make.horizontalEdges.bottom.equalToSuperview().inset(10)
+        realseNote.snp.makeConstraints { make in
+            make.top.equalTo(descriptionLabel.snp.bottom).offset(10)
+            make.horizontalEdges.equalToSuperview().inset(10)
             
         }
         

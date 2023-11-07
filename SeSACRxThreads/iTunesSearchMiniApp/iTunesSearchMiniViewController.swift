@@ -24,6 +24,7 @@ class ITunesSearchMiniViewController : UIViewController {
     
      
     let searchController = UISearchController()
+    
     var items: BehaviorSubject<[AppInfo]> = BehaviorSubject(value: [])
     var searchText: String = "카카오톡"
     let disposeBag = DisposeBag()
@@ -53,15 +54,6 @@ class ITunesSearchMiniViewController : UIViewController {
             }
             .disposed(by: disposeBag)
         
-        /// TableView 클릭후 화면 전환
-//        tableView.rx.modelSelected(AppInfo.self)
-//            .subscribe(with: self) { owner, result in
-//                let detailVC = DetailAppInfoViewController()
-//                detailVC.detailInfo = result
-//                owner.navigationController?.pushViewController(detailVC, animated: true)
-//            }
-//            .disposed(by: disposeBag)
-//
         /// TableView 클릭후 화면 전환
         Observable.zip(tableView.rx.itemSelected, tableView.rx.modelSelected(AppInfo.self))
             .map { $0.1 }
@@ -102,17 +94,7 @@ class ITunesSearchMiniViewController : UIViewController {
             .bind(with: self, onNext: { owner, value in
                 owner.items.onNext(value)
             })
-            
-//            .bind(with: self) { owner, text in
-//                let result = SearchAPIManager.requestSearch(searchString: text.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-//                    .asDriver(onErrorJustReturn: SearchAppModel(resultCount: 0, results: []))
-//
-//                result
-//                    .drive(with: self) { owner, response in
-//                        owner.items.onNext(response.results)
-//                    }
-//                    .disposed(by: owner.disposeBag)
-        
+
             .disposed(by: disposeBag)
         
     }

@@ -42,6 +42,7 @@
 		269CD9072AF94A5100191E36 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269CD9062AF94A5100191E36 /* DetailView.swift */; };
 		269E61A62AF7D7F900FE00E3 /* ShoppingListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E61A52AF7D7F900FE00E3 /* ShoppingListViewController.swift */; };
 		269E61A82AF7EE1200FE00E3 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E61A72AF7EE1200FE00E3 /* ShoppingListViewModel.swift */; };
+		26AEF9882AFA3AD8005B0BA2 /* ITunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */; };
 		26AF1DA92AF65EC000951BA0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DA72AF65EC000951BA0 /* SearchViewController.swift */; };
 		26AF1DAA2AF65EC000951BA0 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DA82AF65EC000951BA0 /* SearchTableViewCell.swift */; };
 		26AF1DAE2AF6831800951BA0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DAD2AF6831800951BA0 /* SearchViewModel.swift */; };
@@ -103,6 +104,7 @@
 		269CD9062AF94A5100191E36 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		269E61A52AF7D7F900FE00E3 /* ShoppingListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewController.swift; sourceTree = "<group>"; };
 		269E61A72AF7EE1200FE00E3 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
+		26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesViewModel.swift; sourceTree = "<group>"; };
 		26AF1DA72AF65EC000951BA0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		26AF1DA82AF65EC000951BA0 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		26AF1DAD2AF6831800951BA0 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 			isa = PBXGroup;
 			children = (
 				269CD8FD2AF9311F00191E36 /* iTunesSearchMiniViewController.swift */,
+				26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */,
 				269CD8FF2AF9323800191E36 /* ITunesTableViewCell.swift */,
 				269CD9042AF9473400191E36 /* DetailAppInfoViewController.swift */,
 				269CD9062AF94A5100191E36 /* DetailView.swift */,
@@ -463,6 +466,7 @@
 				26AF1DA92AF65EC000951BA0 /* SearchViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				269E61A82AF7EE1200FE00E3 /* ShoppingListViewModel.swift in Sources */,
+				26AEF9882AFA3AD8005B0BA2 /* ITunesViewModel.swift in Sources */,
 				269CD9052AF9473400191E36 /* DetailAppInfoViewController.swift in Sources */,
 				26F62BC52AF3F86D002D10D5 /* NickNameViewModel.swift in Sources */,
 				269CD9072AF94A5100191E36 /* DetailView.swift in Sources */,
