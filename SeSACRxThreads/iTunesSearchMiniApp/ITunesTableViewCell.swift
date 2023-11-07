@@ -84,13 +84,13 @@ class ITunesTableViewCell : UITableViewCell {
     }
     
     
-    func configure() {
+    private func configure() {
         [appNameLabel, appIconImageView, downloadButton, stackView].forEach {
             contentView.addSubview($0)
         }
     }
     
-    func setConstraints() {
+    private func setConstraints() {
         appIconImageView.snp.makeConstraints { make in
             make.size.equalTo(60)
             make.leading.top.equalToSuperview().inset(10)
@@ -116,6 +116,22 @@ class ITunesTableViewCell : UITableViewCell {
             make.bottom.equalToSuperview().inset(10)
         }
     }
+    
+    
+    func setUI(data: AppInfo) {
+        let iconImageUrl = URL(string: data.artworkUrl512)!
+        let scShot1 = URL(string: data.screenshotUrls[0])!
+        let scShot2 = URL(string: data.screenshotUrls[1])!
+        let scShot3 = URL(string: data.screenshotUrls[2])!
+        
+        self.appIconImageView.kf.setImage(with: iconImageUrl)
+        self.selectionStyle = .none
+        self.appNameLabel.text = data.trackName
+        self.firstImage.kf.setImage(with: scShot1)
+        self.secondImage.kf.setImage(with: scShot2)
+        self.thirdImage.kf.setImage(with: scShot3)
+    }
+    
     
     override func prepareForReuse() {
         super.prepareForReuse()

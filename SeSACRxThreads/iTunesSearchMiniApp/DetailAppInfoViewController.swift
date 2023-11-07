@@ -21,7 +21,7 @@ class DetailAppInfoViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        dump(detailInfo)
+       // dump(detailInfo)
         detailView.setUI(data: detailInfo)
         self.navigationController?.navigationBar.prefersLargeTitles = false
 
