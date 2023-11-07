@@ -44,6 +44,8 @@
 		269E61A82AF7EE1200FE00E3 /* ShoppingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269E61A72AF7EE1200FE00E3 /* ShoppingListViewModel.swift */; };
 		26AEF9882AFA3AD8005B0BA2 /* ITunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */; };
 		26AEF98A2AFA753C005B0BA2 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEF9892AFA753C005B0BA2 /* MovieViewModel.swift */; };
+		26AEF98D2AFA9C76005B0BA2 /* ValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEF98C2AFA9C76005B0BA2 /* ValidationViewController.swift */; };
+		26AEF98F2AFA9F93005B0BA2 /* ValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AEF98E2AFA9F93005B0BA2 /* ValidationViewModel.swift */; };
 		26AF1DA92AF65EC000951BA0 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DA72AF65EC000951BA0 /* SearchViewController.swift */; };
 		26AF1DAA2AF65EC000951BA0 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DA82AF65EC000951BA0 /* SearchTableViewCell.swift */; };
 		26AF1DAE2AF6831800951BA0 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AF1DAD2AF6831800951BA0 /* SearchViewModel.swift */; };
@@ -107,6 +109,8 @@
 		269E61A72AF7EE1200FE00E3 /* ShoppingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListViewModel.swift; sourceTree = "<group>"; };
 		26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ITunesViewModel.swift; sourceTree = "<group>"; };
 		26AEF9892AFA753C005B0BA2 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		26AEF98C2AFA9C76005B0BA2 /* ValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewController.swift; sourceTree = "<group>"; };
+		26AEF98E2AFA9F93005B0BA2 /* ValidationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationViewModel.swift; sourceTree = "<group>"; };
 		26AF1DA72AF65EC000951BA0 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		26AF1DA82AF65EC000951BA0 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		26AF1DAD2AF6831800951BA0 /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
@@ -167,6 +171,7 @@
 		041280222AEF9BAB00972552 /* SeSACRxThreads */ = {
 			isa = PBXGroup;
 			children = (
+				26AEF98B2AFA9C67005B0BA2 /* Validation */,
 				269CD8FC2AF930FB00191E36 /* iTunesSearchMiniApp */,
 				269CD8F22AF8CE2600191E36 /* MovieProject */,
 				269E61A42AF7D7E400FE00E3 /* ShoppingList */,
@@ -293,6 +298,15 @@
 				269E61A72AF7EE1200FE00E3 /* ShoppingListViewModel.swift */,
 			);
 			path = ShoppingList;
+			sourceTree = "<group>";
+		};
+		26AEF98B2AFA9C67005B0BA2 /* Validation */ = {
+			isa = PBXGroup;
+			children = (
+				26AEF98C2AFA9C76005B0BA2 /* ValidationViewController.swift */,
+				26AEF98E2AFA9F93005B0BA2 /* ValidationViewModel.swift */,
+			);
+			path = Validation;
 			sourceTree = "<group>";
 		};
 		26AF1DA62AF65EB500951BA0 /* Search */ = {
@@ -461,6 +475,7 @@
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
+				26AEF98F2AFA9F93005B0BA2 /* ValidationViewModel.swift in Sources */,
 				26AEF98A2AFA753C005B0BA2 /* MovieViewModel.swift in Sources */,
 				041280732AEFAD4B00972552 /* NicknameViewController.swift in Sources */,
 				269CD8FB2AF8D20200191E36 /* MovieCell.swift in Sources */,
@@ -470,6 +485,7 @@
 				26AF1DA92AF65EC000951BA0 /* SearchViewController.swift in Sources */,
 				041280712AEFAD3D00972552 /* PhoneViewController.swift in Sources */,
 				269E61A82AF7EE1200FE00E3 /* ShoppingListViewModel.swift in Sources */,
+				26AEF98D2AFA9C76005B0BA2 /* ValidationViewController.swift in Sources */,
 				26AEF9882AFA3AD8005B0BA2 /* ITunesViewModel.swift in Sources */,
 				269CD9052AF9473400191E36 /* DetailAppInfoViewController.swift in Sources */,
 				26F62BC52AF3F86D002D10D5 /* NickNameViewModel.swift in Sources */,
