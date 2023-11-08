@@ -12,6 +12,7 @@ import RxCocoa
 class ITunesViewModel {
     
     var items = PublishSubject<[AppInfo]>()
+    
     var searchText: String = "카카오톡"
     let disposeBag = DisposeBag()
 
@@ -28,13 +29,11 @@ class ITunesViewModel {
         let zip: Observable<ControlEvent<AppInfo>.Element>
         let items: PublishSubject<[AppInfo]>
       //  let search: Observable<[AppInfo]>
-        let search: PublishSubject<[AppInfo]>
+        let search: Disposable
     }
     
     func transform(input: Input) -> Output {
-        
-        let appInfo = PublishSubject<[AppInfo]>()
-        
+    
         let zip = input.zip
             .map { $0.1 }
         
@@ -48,11 +47,11 @@ class ITunesViewModel {
             }
             .map { $0.results }
             .bind(with: self) { owner, value in
-                appInfo.onNext(value)
+                owner.items.onNext(value)
             }
         
         
-        return Output(zip: zip, items: items, search: appInfo)
+        return Output(zip: zip, items: items, search: search)
     }
     
     init() {
