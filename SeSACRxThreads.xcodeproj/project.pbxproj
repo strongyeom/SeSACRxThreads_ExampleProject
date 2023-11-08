@@ -53,6 +53,9 @@
 		26F62BC32AF3F7CD002D10D5 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F62BC22AF3F7CD002D10D5 /* PhoneViewModel.swift */; };
 		26F62BC52AF3F86D002D10D5 /* NickNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F62BC42AF3F86D002D10D5 /* NickNameViewModel.swift */; };
 		26F915A02AFB940D003B5123 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9159F2AFB940D003B5123 /* FirstCell.swift */; };
+		26F915A22AFBE251003B5123 /* SecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F915A12AFBE251003B5123 /* SecondCell.swift */; };
+		26F915A42AFBE258003B5123 /* ThirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F915A32AFBE258003B5123 /* ThirdCell.swift */; };
+		26F915A62AFBE260003B5123 /* FourthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F915A52AFBE260003B5123 /* FourthCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +122,9 @@
 		26F62BC22AF3F7CD002D10D5 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
 		26F62BC42AF3F86D002D10D5 /* NickNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameViewModel.swift; sourceTree = "<group>"; };
 		26F9159F2AFB940D003B5123 /* FirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
+		26F915A12AFBE251003B5123 /* SecondCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCell.swift; sourceTree = "<group>"; };
+		26F915A32AFBE258003B5123 /* ThirdCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdCell.swift; sourceTree = "<group>"; };
+		26F915A52AFBE260003B5123 /* FourthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -334,6 +340,9 @@
 				269CD9042AF9473400191E36 /* DetailAppInfoViewController.swift */,
 				269CD9062AF94A5100191E36 /* DetailView.swift */,
 				26F9159F2AFB940D003B5123 /* FirstCell.swift */,
+				26F915A12AFBE251003B5123 /* SecondCell.swift */,
+				26F915A32AFBE258003B5123 /* ThirdCell.swift */,
+				26F915A52AFBE260003B5123 /* FourthCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -488,10 +497,12 @@
 				041280562AEFA04800972552 /* SignInViewController.swift in Sources */,
 				269CD8EF2AF8C29200191E36 /* SeachAppModel.swift in Sources */,
 				269CD8FE2AF9311F00191E36 /* iTunesSearchMiniViewController.swift in Sources */,
+				26F915A42AFBE258003B5123 /* ThirdCell.swift in Sources */,
 				269CD8F72AF8CEA800191E36 /* MovieModel.swift in Sources */,
 				26F62BC32AF3F7CD002D10D5 /* PhoneViewModel.swift in Sources */,
 				26AF1DAE2AF6831800951BA0 /* SearchViewModel.swift in Sources */,
 				041280282AEF9BAB00972552 /* ViewController.swift in Sources */,
+				26F915A22AFBE251003B5123 /* SecondCell.swift in Sources */,
 				041280632AEFA0CE00972552 /* PointButton.swift in Sources */,
 				041280242AEF9BAB00972552 /* AppDelegate.swift in Sources */,
 				26AEF98F2AFA9F93005B0BA2 /* ValidationViewModel.swift in Sources */,
@@ -512,6 +523,7 @@
 				269CD9072AF94A5100191E36 /* DetailView.swift in Sources */,
 				269E61A62AF7D7F900FE00E3 /* ShoppingListViewController.swift in Sources */,
 				269CD8F12AF8C31200191E36 /* SearchAPIManager.swift in Sources */,
+				26F915A62AFBE260003B5123 /* FourthCell.swift in Sources */,
 				263212CB2AF238AA00337610 /* TitleLabel.swift in Sources */,
 				041280262AEF9BAB00972552 /* SceneDelegate.swift in Sources */,
 				041280582AEFA05300972552 /* SignInViewModel.swift in Sources */,
