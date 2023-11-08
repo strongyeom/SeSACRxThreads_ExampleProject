@@ -67,38 +67,9 @@ class ITunesSearchMiniViewController : UIViewController {
                 owner.navigationController?.pushViewController(detailVC, animated: true)
             }
             .disposed(by: disposeBag)
-        
-        
-        
-        
-        /// 네트워크 통신 - 초기값 세팅
-//        let request = SearchAPIManager
-//            .requestSearch(searchString: viewModel.searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-//            .asDriver(onErrorJustReturn: SearchAppModel(resultCount: 0, results: []))
-//
-//        request
-//            .drive(with: self) { owner, response in
-//                owner.viewModel.items.onNext(response.results)
-//            }
-//            .disposed(by: disposeBag)
-            
-        
-        
-        /// 서치 검색 클릭 후 네트워크 통신
-//        searchController.searchBar.rx.searchButtonClicked
-//            .withLatestFrom(searchController.searchBar.rx.text.orEmpty)
-//            .throttle(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
-//            .debug()
-//            //.distinctUntilChanged()
-//            .flatMap {
-//                SearchAPIManager.requestSearch(searchString: $0.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
-//            }
-//            .map { $0.results }
-            output.search
-            .bind(with: self, onNext: { owner, value in
-                owner.viewModel.items.onNext(value)
-            })
 
+            /// 서치시 네트워크 통신 후 배열에  items에 저장
+            output.search
             .disposed(by: disposeBag)
         
     }

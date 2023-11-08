@@ -27,10 +27,13 @@ class ITunesViewModel {
     struct Output {
         let zip: Observable<ControlEvent<AppInfo>.Element>
         let items: PublishSubject<[AppInfo]>
-        let search: Observable<[AppInfo]>
+      //  let search: Observable<[AppInfo]>
+        let search: PublishSubject<[AppInfo]>
     }
     
     func transform(input: Input) -> Output {
+        
+        let appInfo = PublishSubject<[AppInfo]>()
         
         let zip = input.zip
             .map { $0.1 }
@@ -44,10 +47,12 @@ class ITunesViewModel {
                 SearchAPIManager.requestSearch(searchString: $0.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)
             }
             .map { $0.results }
+            .bind(with: self) { owner, value in
+                appInfo.onNext(value)
+            }
         
         
-        
-        return Output(zip: zip, items: items, search: search)
+        return Output(zip: zip, items: items, search: appInfo)
     }
     
     init() {
