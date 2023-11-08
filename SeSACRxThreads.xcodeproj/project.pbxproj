@@ -52,6 +52,7 @@
 		26F62BC12AF3F6FE002D10D5 /* BirthdayViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F62BC02AF3F6FE002D10D5 /* BirthdayViewModel.swift */; };
 		26F62BC32AF3F7CD002D10D5 /* PhoneViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F62BC22AF3F7CD002D10D5 /* PhoneViewModel.swift */; };
 		26F62BC52AF3F86D002D10D5 /* NickNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F62BC42AF3F86D002D10D5 /* NickNameViewModel.swift */; };
+		26F915A02AFB940D003B5123 /* FirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F9159F2AFB940D003B5123 /* FirstCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -117,6 +118,7 @@
 		26F62BC02AF3F6FE002D10D5 /* BirthdayViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirthdayViewModel.swift; sourceTree = "<group>"; };
 		26F62BC22AF3F7CD002D10D5 /* PhoneViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViewModel.swift; sourceTree = "<group>"; };
 		26F62BC42AF3F86D002D10D5 /* NickNameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NickNameViewModel.swift; sourceTree = "<group>"; };
+		26F9159F2AFB940D003B5123 /* FirstCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,8 +286,7 @@
 				269CD8FD2AF9311F00191E36 /* iTunesSearchMiniViewController.swift */,
 				26AEF9872AFA3AD8005B0BA2 /* ITunesViewModel.swift */,
 				269CD8FF2AF9323800191E36 /* ITunesTableViewCell.swift */,
-				269CD9042AF9473400191E36 /* DetailAppInfoViewController.swift */,
-				269CD9062AF94A5100191E36 /* DetailView.swift */,
+				26F9159E2AFB86B5003B5123 /* Detail */,
 			);
 			path = iTunesSearchMiniApp;
 			sourceTree = "<group>";
@@ -317,6 +318,24 @@
 				26AF1DAD2AF6831800951BA0 /* SearchViewModel.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		26F9159D2AFB86AA003B5123 /* DetailCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DetailCell;
+			sourceTree = "<group>";
+		};
+		26F9159E2AFB86B5003B5123 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				26F9159D2AFB86AA003B5123 /* DetailCell */,
+				269CD9042AF9473400191E36 /* DetailAppInfoViewController.swift */,
+				269CD9062AF94A5100191E36 /* DetailView.swift */,
+				26F9159F2AFB940D003B5123 /* FirstCell.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +507,7 @@
 				26AEF98D2AFA9C76005B0BA2 /* ValidationViewController.swift in Sources */,
 				26AEF9882AFA3AD8005B0BA2 /* ITunesViewModel.swift in Sources */,
 				269CD9052AF9473400191E36 /* DetailAppInfoViewController.swift in Sources */,
+				26F915A02AFB940D003B5123 /* FirstCell.swift in Sources */,
 				26F62BC52AF3F86D002D10D5 /* NickNameViewModel.swift in Sources */,
 				269CD9072AF94A5100191E36 /* DetailView.swift in Sources */,
 				269E61A62AF7D7F900FE00E3 /* ShoppingListViewController.swift in Sources */,

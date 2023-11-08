@@ -63,7 +63,7 @@ class ITunesSearchMiniViewController : UIViewController {
             .debug()
             .subscribe(with: self) { owner, result in
                 let detailVC = DetailAppInfoViewController()
-                detailVC.detailInfo = result
+                // detailVC.detailInfo = result
                 owner.navigationController?.pushViewController(detailVC, animated: true)
             }
             .disposed(by: disposeBag)
