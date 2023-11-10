@@ -8,7 +8,8 @@
 import Foundation
 import RxSwift
 
-enum APIError : Error {
+enum APIError: Error {
+    case invalidURL
     case unkwoned
     case statusError
 }
@@ -22,6 +23,7 @@ class SearchAPIManager {
             let url = "https://itunes.apple.com/search?term=\(searchString)&country=KR&media=software&lang=ko_KR&limit=10"
             
             guard let url = URL(string: url) else {
+                
                 return  Disposables.create()
             }
             
@@ -36,11 +38,13 @@ class SearchAPIManager {
                     return
                 }
                 
+                // 네트워크 통신으로 가져온 data를 SearchAppModel 타입으로 decoding 하는 작업
                 if let data = data, let appData = try? JSONDecoder().decode(SearchAppModel.self, from: data) {
                     value.onNext(appData)
                 }
                 
             }.resume()
+            
             return Disposables.create()
         }
     }
@@ -50,26 +54,41 @@ class SearchAPIManager {
        
         return Observable<SearchAppModel>.create { value in
             
-            let url = "https://itunes.apple.com/search?term=todo&country=KR&media=software&lang=ko_KR&limit=10"
+            let urlString = "https://itunes.apple.com/search?term=todo&country=KR&media=software&lang=ko_KR&limit=10"
             
-            guard let url = URL(string: url) else {
+            guard let url = URL(string: urlString) else {
+                value.onError(APIError.invalidURL)
                 return  Disposables.create()
             }
             
             URLSession.shared.dataTask(with: url) { data, response, error in
-                print("URLSession Succeess")
+                print("URLSession ㅏㅓㅏㅓㅏ")
                 if let _ = error {
+                    print("URLSession error")
                     value.onError(APIError.unkwoned)
+                   
                 }
                 
                 guard let response = response as? HTTPURLResponse, (200...299).contains(response.statusCode) else {
+                    print("URLSession response")
                     value.onError(APIError.statusError)
+                    
                     return
                 }
                 
-                if let data = data, let appData = try? JSONDecoder().decode(SearchAppModel.self, from: data) {
-                    value.onNext(appData)
+                guard let data else {
+                    print("data----- error")
+                    return
                 }
+                
+                do {
+                    let appData = try JSONDecoder().decode(SearchAppModel.self, from: data)
+                    value.onNext(appData)
+                } catch {
+                    print(error.localizedDescription)
+                    
+                }
+               
                 
             }.resume()
             return Disposables.create()

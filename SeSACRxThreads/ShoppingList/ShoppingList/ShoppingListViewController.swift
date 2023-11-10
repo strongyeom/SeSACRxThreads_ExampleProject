@@ -7,8 +7,9 @@
 
 import UIKit
 import RxSwift
-//import RxCocoa
+import RxCocoa
 import SnapKit
+
 
 class ShoppingListViewController: UIViewController {
     
@@ -39,7 +40,7 @@ class ShoppingListViewController: UIViewController {
         view.backgroundColor = .white
         configure()
         bind()
-        navigationItem.rightBarButtonItem = plusbarButton
+        // setSearchController()
         
     }
     
