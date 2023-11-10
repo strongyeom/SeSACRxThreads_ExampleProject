@@ -19,8 +19,6 @@ class ShoppingListPartTwoViewController : UIViewController {
         return table
     }()
     
-    var exampleClicked: [AppInfo] = []
-    
     let viewModel = ShoppingViewModel()
     let disposeBag = DisposeBag()
     
@@ -42,11 +40,11 @@ class ShoppingListPartTwoViewController : UIViewController {
      
         
         
-        let input = ShoppingViewModel.Input(cellTap: tableView.rx.modelSelected(AppInfo.self))
+        let input = ShoppingViewModel.Input(cellTap: tableView.rx.modelSelected(AppInfo.self), btnTap: editBarBtn.rx.tap, tableItemDeleted: tableView.rx.itemDeleted, tableViewItemMoved: tableView.rx.itemMoved)
         
         
         
-        let output = input
+        let output = viewModel.transform(input: input)
                 
         // items 테이블뷰에 뿌려주기
         viewModel.items
@@ -70,33 +68,25 @@ class ShoppingListPartTwoViewController : UIViewController {
                 owner.navigationController?.pushViewController(DetailShoppingListPartViewController(), animated: true)
             }
             .disposed(by: disposeBag)
-        
-        let deleteTrigger = PublishRelay<Bool>()
-        
-        deleteTrigger
-            .observe(on: MainScheduler.instance)
-            .withUnretained(self)
-            .bind { owner, bool in
-                print(bool)
-                owner.tableView.isEditing = bool
-//                owner.tableView.setEditing(bool, animated: true)
-            }
-            .disposed(by: disposeBag)
+//
+//        let deleteTrigger = PublishRelay<Bool>()
+//
+//        deleteTrigger
+//            .observe(on: MainScheduler.instance)
+//            .withUnretained(self)
+//            .bind { owner, bool in
+//                print(bool)
+//                owner.tableView.isEditing = bool
+////                owner.tableView.setEditing(bool, animated: true)
+//            }
+//            .disposed(by: disposeBag)
 
         // TableViewCell 삭제
-        tableView.rx.itemDeleted
-            .observe(on: MainScheduler.asyncInstance) // vs MainScheduler.instance - 동작안함
+        output.deleted
             .bind(with: self) { owner, index in
                 print("index - \(index)")
                 // TODO: - 왜 여기서는 isEditing 작동하지 않을까?
-//                owner.tableView.setEditing(false, animated: true)
-//                DispatchQueue.main.async {
-//                    owner.tableView.isEditing = false
-//                    print(owner.tableView.isEditing)
-//                }
-//                owner.tableView.isEditing = false
-//                print(owner.tableView.isEditing)
-                
+//
                 owner.viewModel.data.remove(at: index.row)
                 owner.viewModel.items.onNext(owner.viewModel.data)
 //                deleteTrigger.accept(false)
@@ -104,16 +94,9 @@ class ShoppingListPartTwoViewController : UIViewController {
                 owner.tableView.setEditing(false, animated: true)
             }
             .disposed(by: disposeBag)
-        
-        tableView.rx.itemInserted
-            .bind(with: self) { owner, index in
-                print("itemInserted - \(index)")
-            }
-            .disposed(by: disposeBag)
-       
+
         // TableViewCell 자리 이동
-        tableView.rx.itemMoved
-            .map { $0.destinationIndex.row }
+        output.tableViewItemMoved
             .bind(with: self) { owner, value in
                 print("바꿀려는 인덱스 : \(value)")
                 owner.tableView.isEditing.toggle()
@@ -124,7 +107,7 @@ class ShoppingListPartTwoViewController : UIViewController {
         // NavigationBarbutton
         navigationItem.rightBarButtonItem = editBarBtn
         
-        editBarBtn.rx.tap
+        output.btnTap
             .bind(with: self) { owner, _ in
                 owner.tableView.isEditing.toggle()
                 

@@ -3,4 +3,243 @@
    uuid = "9046F58F-DE90-4C0A-BAA6-472982CEEE91"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "50B9EE85-8E73-4F47-9BB8-5644A9261A65"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "50B9EE85-8E73-4F47-9BB8-5644A9261A65 - 10884c8b45f4d6bd"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "96"
+                  endingLineNumber = "96"
+                  offsetFromSymbolStart = "1326">
+               </Location>
+               <Location
+                  uuid = "50B9EE85-8E73-4F47-9BB8-5644A9261A65 - 10884c8b45f4c903"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "94"
+                  endingLineNumber = "94"
+                  offsetFromSymbolStart = "1326">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2 - 941581153a7e8110"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "88"
+                  endingLineNumber = "88"
+                  offsetFromSymbolStart = "3040">
+               </Location>
+               <Location
+                  uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2 - 10884c8b45f4c9a6"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "89"
+                  endingLineNumber = "89"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2 - 941581153a7e80de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "2238">
+               </Location>
+               <Location
+                  uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2 - 10884c8b45f4c9e4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "140">
+               </Location>
+               <Location
+                  uuid = "536235A8-B4D5-4F50-8841-86537F8E9BA2 - 941581153a7e80de"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "2309">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14B0B967-F0B9-4021-B511-4ED8541FDD7E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "14B0B967-F0B9-4021-B511-4ED8541FDD7E - 10884c8b45f4c922"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "93"
+                  endingLineNumber = "93"
+                  offsetFromSymbolStart = "1087">
+               </Location>
+               <Location
+                  uuid = "14B0B967-F0B9-4021-B511-4ED8541FDD7E - 10884c8b45f4c960"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "91"
+                  endingLineNumber = "91"
+                  offsetFromSymbolStart = "1087">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "46C812F2-B866-4BAD-9769-B2679E56FEB5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "46C812F2-B866-4BAD-9769-B2679E56FEB5 - 10884c8b45f4c941"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "616">
+               </Location>
+               <Location
+                  uuid = "46C812F2-B866-4BAD-9769-B2679E56FEB5 - 10884c8b45f4c987"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #3 (SeSACRxThreads.ShoppingListPartTwoViewController, Foundation.IndexPath) -&gt; () in SeSACRxThreads.ShoppingListPartTwoViewController.bind() -&gt; ()"
+                  moduleName = "SeSACRxThreads"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yeomseongpil/Desktop/%E1%84%89%E1%85%A2%E1%84%8A%E1%85%A1%E1%86%A8/10%E1%84%8B%E1%85%AF%E1%86%AF/11.1%20Threads/Threads_Example/SeSACRxThreads/SeSACRxThreads/ShoppingList/ShoppingList_part2/ShoppingListPartTwoViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "90"
+                  endingLineNumber = "90"
+                  offsetFromSymbolStart = "616">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

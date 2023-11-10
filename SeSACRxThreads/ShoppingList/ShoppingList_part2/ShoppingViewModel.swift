@@ -27,15 +27,31 @@ class ShoppingViewModel: InOut {
     struct Input {
         
         let cellTap: ControlEvent<AppInfo>
+        let btnTap: ControlEvent<Void>
+        let tableItemDeleted: ControlEvent<IndexPath>
+        let tableViewItemMoved: ControlEvent<ItemMovedEvent>
     }
     
     struct Output {
         let cellTap: ControlEvent<AppInfo>
+        let btnTap: ControlEvent<Void>
+        let deleted: Observable<IndexPath>
+        let tableViewItemMoved: Observable<Int>
     }
     
     func transform(input: Input) -> Output {
         
-        Output(cellTap: input.cellTap)
+        let cellTap = input.cellTap
+        
+        let btnTap = input.btnTap
+        
+        let delete = input.tableItemDeleted
+            .observe(on: MainScheduler.asyncInstance) // vs MainScheduler.instance
+        
+        let moved = input.tableViewItemMoved
+            .map { $0.destinationIndex.row }
+        
+        return Output(cellTap: cellTap, btnTap: btnTap, deleted: delete, tableViewItemMoved: moved)
     }
     
     
