@@ -40,7 +40,7 @@ class ITunesViewModel {
         let search = input.searchClicked
             .withLatestFrom(input.text)
             .throttle(RxTimeInterval.seconds(3), scheduler: MainScheduler.instance)
-            .debug()
+            //.debug()
             //.distinctUntilChanged()
             .flatMap {
                 SearchAPIManager.requestSearch(searchString: $0.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)

@@ -60,10 +60,9 @@ class ITunesSearchMiniViewController : UIViewController {
         
         /// TableView 클릭후 화면 전환
         output.zip
-            .debug()
             .subscribe(with: self) { owner, result in
                 let detailVC = DetailAppInfoViewController()
-                // detailVC.detailInfo = result
+                detailVC.detailInfo = result
                 owner.navigationController?.pushViewController(detailVC, animated: true)
             }
             .disposed(by: disposeBag)

@@ -15,8 +15,8 @@ struct SearchAppModel: Codable {
     let results: [AppInfo]
 }
 //
-struct AppInfo: Codable, Hashable {
-//    let id = UUID()
+struct AppInfo: Codable {
+
     let screenshotUrls: [String]
     let trackName: String // 이름
     let genres: [String] // 장르
